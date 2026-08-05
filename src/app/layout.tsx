@@ -35,7 +35,7 @@ const asciiBrand = Silkscreen({
 export const metadata: Metadata = {
   title: "ascii-studio | ASCII Studio",
   description:
-    "Make ASCII move. Drop in a video or image and turn it into animated ASCII art, right in your browser.",
+    "Create and export animated ASCII art for modern web experiences.",
   metadataBase: new URL(SITE_CONFIG.url),
   icons: {
     icon: [
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ascii-studio | ASCII Studio",
     description:
-      "Make ASCII move. Drop in a video or image and turn it into animated ASCII art, right in your browser.",
+      "Create and export animated ASCII art for modern web experiences.",
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.name,
     type: "website",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ascii-studio | ASCII Studio",
     description:
-      "Make ASCII move. Drop in a video or image and turn it into animated ASCII art, right in your browser.",
+      "Create and export animated ASCII art for modern web experiences.",
     images: ["/og-image.jpg"],
   },
 };

@@ -16,7 +16,7 @@ export const BRAND_LOGO_RADIUS_CLASS = "rounded-[10px] sm:rounded-[11px]";
 export const SITE_CONFIG = {
   name: "ascii-studio",
   description:
-    "Make ASCII move. Drop in a video or image and turn it into animated ASCII art, right in your browser.",
+    "Create and export animated ASCII art for modern web experiences.",
   url: siteUrl,
 } as const;
 
@@ -24,7 +24,7 @@ export const siteConfig = {
   productName: "ascii-studio",
   siteName: "ascii-studio",
   logoPath: "/logo/logo.svg" as const,
-  tagline: "Make ASCII move.",
+  tagline: "ASCII Studio",
   studioPath: "/studio",
   githubRepo: repo,
   githubUrl: `https://github.com/${repo}`,
