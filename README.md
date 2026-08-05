@@ -1,25 +1,14 @@
 <p align="center">
-  <img src="./assets/site/logo.svg" alt="Glyphcast logo" width="120" />
+  <img src="./assets/site/logo.svg" alt="ascii-studio logo" width="120" />
 </p>
 
-<h1 align="center">Glyphcast</h1>
+<h1 align="center">ascii-studio</h1>
 
 <p align="center">Convert videos into ASCII sequences.</p>
 <p align="center">Browser-native ASCII studio for image, GIF, and video workflows.</p>
-
-<p align="center">
-  <a href="https://peerlist.io/narsibhati31/project/glyphcast" target="_blank" rel="noreferrer">
-    <img src="https://peerlist.io/api/v1/projects/embed/PRJH8OENNOBNB8QQG3DRKRBNBDKJJB?showUpvote=true&theme=dark" alt="Glyphcast" style="height: 54px; width: auto;" />
-  </a>
-  &nbsp;
-  <a href="https://www.producthunt.com/products/glyphcast?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-glyphcast" target="_blank" rel="noopener noreferrer">
-    <img alt="Glyphcast - Convert Videos into ASCII  Sequences | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1150427&theme=light&t=1779169623504" style="height: 54px; width: auto;" />
-  </a>
-</p>
-
 ## About The Project
 
-Glyphcast is an interactive studio that converts visual media into animated ASCII output.  
+ascii-studio is an interactive studio that converts visual media into animated ASCII output.  
 Each frame is sampled on a pixel grid, mapped to a character set by luminance, styled with typography/effects, and rendered in real time for preview and export.
 
 The studio supports:
@@ -31,17 +20,17 @@ The studio supports:
 
 ## Project Preview
 
-![Glyphcast hero section](./assets/site/glyphcast.webp)
-![Glyphcast dashboard](./assets/site/dashboard.webp)
+![ascii-studio hero section](./assets/site/ascii-studio.webp)
+![ascii-studio dashboard](./assets/site/dashboard.webp)
 
 <table>
   <tr>
-    <td><img src="./assets/site/car-drifting-ascii.gif" alt="Glyphcast sample GIF 1" width="300" height="170" style="object-fit: cover;" /></td>
-    <td><img src="./assets/site/skull-ascii.gif" alt="Glyphcast sample GIF 2" width="300" height="170" style="object-fit: cover;" /></td>
+    <td><img src="./assets/site/car-drifting-ascii.gif" alt="ascii-studio sample GIF 1" width="300" height="170" style="object-fit: cover;" /></td>
+    <td><img src="./assets/site/skull-ascii.gif" alt="ascii-studio sample GIF 2" width="300" height="170" style="object-fit: cover;" /></td>
   </tr>
   <tr>
-    <td><img src="./assets/site/fire-ascii.gif" alt="Glyphcast sample GIF 3" width="300" height="170" style="object-fit: cover;" /></td>
-    <td><img src="./assets/site/stroke-ascii.gif" alt="Glyphcast sample GIF 4" width="300" height="170" style="object-fit: cover;" /></td>
+    <td><img src="./assets/site/fire-ascii.gif" alt="ascii-studio sample GIF 3" width="300" height="170" style="object-fit: cover;" /></td>
+    <td><img src="./assets/site/stroke-ascii.gif" alt="ascii-studio sample GIF 4" width="300" height="170" style="object-fit: cover;" /></td>
   </tr>
 </table>
 
@@ -62,7 +51,7 @@ Add your video file to `assets/site` and update this link path when ready.
 
 ## How Conversion Works
 
-Glyphcast’s conversion pipeline is implemented in `src/lib/ascii/ascii-converter.ts` and `src/lib/ascii/ascii-export.ts`.
+ascii-studio’s conversion pipeline is implemented in `src/lib/ascii/ascii-converter.ts` and `src/lib/ascii/ascii-export.ts`.
 
 1. Resolve source dimensions (`image`, `video`, or `canvas`)
 2. Downsample source to ASCII grid (`columns` x derived `rows`) on an offscreen canvas
@@ -96,7 +85,7 @@ Glyphcast’s conversion pipeline is implemented in `src/lib/ascii/ascii-convert
 ## Project Structure
 
 ```text
-glyphcast/
+ascii-studio/
 ├── assets/
 │   └── site/                  # README/site branding assets
 ├── public/                    # static media, logos, preview clips
@@ -179,7 +168,7 @@ bun run format
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=narsibhati-dev%2Fglyphcast&type=date&legend=top-left">
+<a href="https://www.star-history.com/?repos=VishalDevx%2Fascii-studio&type=date&legend=top-left">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=VishalDevx/ascii-studio&type=date&theme=dark&legend=top-left" />
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=VishalDevx/ascii-studio&type=date&legend=top-left" />
@@ -190,5 +179,3 @@ bun run format
 ## Links
 
 - GitHub: [VishalDevx/ascii-studio](https://github.com/VishalDevx/ascii-studio)
-- X: [@marsihq](https://x.com/marsihq)
-- LinkedIn: [narsibhati](https://www.linkedin.com/in/narsibhati/)

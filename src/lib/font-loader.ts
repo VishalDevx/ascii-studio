@@ -58,7 +58,7 @@ export function loadGoogleFont(presetId: string): void {
   loaded.add(presetId);
 
   if (typeof document === "undefined") return;
-  const selector = `link[data-glyphcast-font="${presetId}"]`;
+  const selector = `link[data-ascii-studio-font="${presetId}"]`;
   if (document.querySelector(selector)) return;
 
   const family = encodeURIComponent(fontName).replace(/%20/g, "+");
@@ -67,7 +67,7 @@ export function loadGoogleFont(presetId: string): void {
   const link = document.createElement("link");
   link.rel = "stylesheet";
   link.href = href;
-  link.setAttribute("data-glyphcast-font", presetId);
+  link.setAttribute("data-ascii-studio-font", presetId);
   document.head.appendChild(link);
 }
 

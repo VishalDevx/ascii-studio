@@ -1,6 +1,6 @@
 {
-  "name": "Glyphcast",
-  "short_name": "Glyphcast",
+  "name": "ascii-studio",
+  "short_name": "ascii-studio",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

@@ -40,10 +40,10 @@ export default function Features() {
       >
         <motion.div
           variants={itemVariants}
-          className="mb-6 flex items-center justify-center gap-2 rounded-full border-2 border-blue-light-active bg-blue-light px-3 py-1.5 text-xs dark:border-[#FFB07A]/50 dark:bg-zinc-950/95 dark:shadow-[inset_0_0_0_1px_rgba(255,176,122,0.12)]"
+          className="mb-6 flex items-center justify-center gap-2 rounded-full border-2 border-blue-light-active bg-blue-light px-3 py-1.5 text-xs dark:border-[#7CF0B4]/50 dark:bg-zinc-950/95 dark:shadow-[inset_0_0_0_1px_rgba(124,240,180,0.16)]"
         >
           <motion.span
-            className="inline-flex text-[#B54B00] dark:text-[#FFB07A]"
+            className="inline-flex text-[#00C561] dark:text-[#7CF0B4]"
             animate={{ y: [0, -3, 0], opacity: [0.7, 1, 0.7] }}
             transition={{
               duration: 2.6,
@@ -54,7 +54,7 @@ export default function Features() {
           >
             <Sparkles size={16} />
           </motion.span>
-          <span className="font-medium text-[#111111] dark:text-zinc-100">
+          <span className="font-medium text-[#0e1410] dark:text-zinc-100">
             Core Capabilities
           </span>
         </motion.div>
@@ -66,7 +66,7 @@ export default function Features() {
           Everything you need to <br />
           <span
             style={{
-              background: "linear-gradient(55.33deg, #B54B00 1%, #E07030 100%)",
+              background: "linear-gradient(55.33deg, #00C561 1%, #43E98D 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
@@ -84,21 +84,21 @@ export default function Features() {
               background: "#FFF3EC",
               border: "1px solid #FFD0AC",
               boxShadow:
-                "0px 4px 16px rgba(181,75,0,0.08), 0px 1px 3px rgba(181,75,0,0.06)",
+                "0px 4px 16px rgba(0,197,97,0.08), 0px 1px 3px rgba(0,197,97,0.06)",
             }}
           >
             <div
               className="pointer-events-none absolute inset-0 z-0 rounded-[16px]"
               style={{
                 background:
-                  "linear-gradient(180deg, rgba(181,75,0,0.14) 0%, rgba(181,75,0,0.03) 46%, rgba(181,75,0,0.10) 100%)",
+                  "linear-gradient(180deg, rgba(0,197,97,0.14) 0%, rgba(0,197,97,0.03) 46%, rgba(0,197,97,0.10) 100%)",
               }}
             />
             <div className="relative z-10 h-[152px] w-full sm:h-[min(32vw,240px)] sm:min-h-[176px]">
               <VideoShowcaseReel />
             </div>
             <div className="relative z-10 flex w-full flex-col items-start px-4 pb-4 text-left sm:px-6 sm:pb-6">
-              <h3 className="text-lg font-medium text-[#111111] sm:text-xl">
+              <h3 className="text-lg font-medium text-[#0e1410] sm:text-xl">
                 Real-time Conversion
               </h3>
               <p className="text-[#333333] font-medium text-[11px] sm:text-xs leading-relaxed">
@@ -116,7 +116,7 @@ export default function Features() {
               background: "#FFF3EC",
               border: "1px solid #FFD0AC",
               boxShadow:
-                "0px 4px 16px rgba(181,75,0,0.06), 0px 1px 3px rgba(181,75,0,0.04)",
+                "0px 4px 16px rgba(0,197,97,0.06), 0px 1px 3px rgba(0,197,97,0.04)",
             }}
           >
             <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-[16px]">
@@ -133,7 +133,7 @@ export default function Features() {
             </div>
             <div className="relative z-10 mt-auto w-fit pt-6">
               <div className="rounded-xl bg-white p-3 shadow-sm ring-1 ring-[#FFD0AC]">
-                <Settings className="h-6 w-6 text-[#B54B00]" />
+                <Settings className="h-6 w-6 text-[#00C561]" />
               </div>
             </div>
           </motion.div>
@@ -146,14 +146,14 @@ export default function Features() {
               background: "#FFF3EC",
               border: "1px solid #FFD0AC",
               boxShadow:
-                "0px 4px 16px rgba(181,75,0,0.06), 0px 1px 3px rgba(181,75,0,0.04)",
+                "0px 4px 16px rgba(0,197,97,0.06), 0px 1px 3px rgba(0,197,97,0.04)",
             }}
           >
             <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-[16px]">
               <BentoCardCanvasBg reverse />
             </div>
             <div className="relative z-10 w-full">
-              <h3 className="text-xl sm:text-2xl font-medium text-[#111111] mb-2 sm:mb-3">
+              <h3 className="text-xl sm:text-2xl font-medium text-[#0e1410] mb-2 sm:mb-3">
                 Multiple Formats
               </h3>
               <p className="text-[#333333] font-medium text-[13px] sm:text-sm leading-relaxed max-w-sm">
@@ -174,7 +174,7 @@ export default function Features() {
             className="relative flex min-h-[220px] flex-col justify-between overflow-hidden rounded-[16px] p-6 sm:col-span-5 sm:col-start-8 sm:row-start-2 sm:min-h-[240px] sm:self-stretch sm:p-8 lg:col-span-6 lg:col-start-7"
             style={{
               background:
-                "linear-gradient(135deg, #6B2800 0%, #B54B00 55%, #D96020 100%)",
+                "linear-gradient(135deg, #09613A 0%, #00C561 55%, #36E584 100%)",
             }}
           >
             <div

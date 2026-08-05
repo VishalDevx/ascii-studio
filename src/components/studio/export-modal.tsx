@@ -159,7 +159,7 @@ export function ExportModal({ open, onClose }: ExportModalProps) {
           >
             {/* Header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-[#E5E5E5] dark:border-zinc-800">
-              <h2 className="font-heading text-base font-bold tracking-tight text-[#111] dark:text-zinc-100">
+              <h2 className="font-heading text-base font-bold tracking-tight text-[#0e1410] dark:text-zinc-100">
                 Export
               </h2>
               <button
@@ -218,8 +218,8 @@ export function ExportModal({ open, onClose }: ExportModalProps) {
                           "flex items-center gap-3 rounded-xl px-3.5 py-3 text-left transition-all",
                           "border",
                           selected
-                            ? "border-[#B54B00] bg-[#FFF5ED] dark:bg-[#B54B00]/10 dark:border-[#B54B00]"
-                            : "border-[#E5E5E5] dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:border-[#B54B00]/40",
+                            ? "border-[#00C561] bg-[#E9FFF4] dark:bg-[#00C561]/10 dark:border-[#00C561]"
+                            : "border-[#E5E5E5] dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:border-[#00C561]/40",
                           disabled && "opacity-40 cursor-not-allowed",
                         )}
                       >
@@ -228,12 +228,12 @@ export function ExportModal({ open, onClose }: ExportModalProps) {
                           className={cn(
                             "flex size-4 shrink-0 items-center justify-center rounded-full border-2 transition-colors",
                             selected
-                              ? "border-[#B54B00]"
+                              ? "border-[#00C561]"
                               : "border-[#D6D6D6] dark:border-zinc-600",
                           )}
                         >
                           {selected && (
-                            <span className="size-2 rounded-full bg-[#B54B00]" />
+                            <span className="size-2 rounded-full bg-[#00C561]" />
                           )}
                         </span>
 
@@ -242,7 +242,7 @@ export function ExportModal({ open, onClose }: ExportModalProps) {
                           className={cn(
                             "flex size-8 shrink-0 items-center justify-center rounded-lg",
                             selected
-                              ? "bg-[#B54B00]/15 text-[#B54B00]"
+                              ? "bg-[#00C561]/15 text-[#00C561]"
                               : "bg-[#F9FAFC] dark:bg-zinc-700 text-[#888] dark:text-zinc-400",
                           )}
                         >
@@ -255,8 +255,8 @@ export function ExportModal({ open, onClose }: ExportModalProps) {
                             className={cn(
                               "font-heading text-xs font-semibold tracking-tight",
                               selected
-                                ? "text-[#B54B00]"
-                                : "text-[#111] dark:text-zinc-100",
+                                ? "text-[#00C561]"
+                                : "text-[#0e1410] dark:text-zinc-100",
                             )}
                           >
                             {label}

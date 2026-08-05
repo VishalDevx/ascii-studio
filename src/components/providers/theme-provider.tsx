@@ -33,7 +33,7 @@ const ThemeContext = createContext<ThemeContextValue | null>(null);
 export function ThemeProvider({
   children,
   defaultTheme = "dark",
-  storageKey = "glyphcast-theme",
+  storageKey = "ascii-studio-theme",
   disableTransitionOnChange = false,
 }: ThemeProviderProps) {
   const [theme, setThemeState] = useState<Theme>(() => defaultTheme);

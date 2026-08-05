@@ -18,7 +18,7 @@ const HeroSection = () => {
   const [isIntoHovered, setIsIntoHovered] = React.useState(false);
   const [isSequencesHovered, setIsSequencesHovered] = React.useState(false);
   const { theme } = useTheme();
-  const defaultTextColor = theme === "dark" ? "#F9FAFC" : "#111111";
+  const defaultTextColor = theme === "dark" ? "#F9FAFC" : "#0e1410";
 
   React.useEffect(() => {
     let cancelled = false;
@@ -44,22 +44,23 @@ const HeroSection = () => {
           <motion.div
             layout
             transition={{ layout: { duration: 0.35, ease: "easeOut" } }}
-            className="border border-[#FFD9B8] p-0.5 rounded-full inline-flex justify-center items-center bg-[radial-gradient(circle_at_center,_rgba(181,75,0,0.12)_0%,_rgba(181,75,0,0.04)_50%,_rgba(181,75,0,0)_80%)]"
+            className="border border-[#B7F2D2]/70 p-0.5 rounded-full inline-flex justify-center items-center bg-[radial-gradient(circle_at_center,_rgba(0,197,97,0.14)_0%,_rgba(0,197,97,0.05)_50%,_rgba(0,197,97,0)_80%)]"
           >
             <Link
               href={siteConfig.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className=" px-4 flex py-1.5  text-[10px] text-white"
+              className=" px-4 flex py-1.5 text-[10px] text-white"
               style={{
                 background:
-                  "linear-gradient(137.68deg, #B54B00 22.55%, #C96020 86.49%)",
+                  "linear-gradient(137.68deg, #00C561 22.55%, #2BE27E 86.49%)",
                 boxShadow:
-                  "0px 8px 24px rgba(181,75,0,0.3), inset 0px 1px 4px 2px rgba(255,200,160,0.4)",
+                  "0px 8px 24px rgba(0,197,97,0.35), inset 0px 1px 4px 2px rgba(160,255,205,0.45)",
                 borderRadius: "100px",
               }}
             >
-              <span className="mr-1">
+              <span className="mr-1.5 inline-block size-1.5 self-center rounded-full bg-white/95 animate-pulse" />
+              <span className="mr-1 font-mono">
                 <NumberFlow value={starsCount} />
               </span>
               Stargazers on GitHub
@@ -75,7 +76,7 @@ const HeroSection = () => {
               <span
                 className={`transition-all duration-200 ${
                   isFootageHovered
-                    ? "text-[#B54B00]"
+                    ? "text-[#00C561]"
                     : "text-black dark:text-white"
                 }`}
               >
@@ -88,7 +89,7 @@ const HeroSection = () => {
                 onHoverStart={() => setIsIntoHovered(true)}
                 onHoverEnd={() => setIsIntoHovered(false)}
                 animate={{
-                  color: isIntoHovered ? "#B54B00" : defaultTextColor,
+                  color: isIntoHovered ? "#00C561" : defaultTextColor,
                   y: isIntoHovered ? -2 : 0,
                   scale: isIntoHovered ? 1.04 : 1,
                 }}
@@ -97,7 +98,7 @@ const HeroSection = () => {
                 into
               </motion.span>{" "}
               <motion.span
-                className="absolute left-0 -bottom-2 h-[3px] rounded-full bg-[#B54B00]"
+                className="absolute left-0 -bottom-2 h-[3px] rounded-full bg-[#00C561]"
                 initial={{ width: 0, opacity: 0 }}
                 animate={{
                   width: isIntoHovered ? "100%" : "0%",
@@ -115,7 +116,7 @@ const HeroSection = () => {
               <span
                 className={`transition-all duration-200 inline-block ${
                   isAsciiHovered
-                    ? "text-[#B54B00]"
+                    ? "text-[#00C561]"
                     : "text-black dark:text-white"
                 }`}
               >
@@ -137,7 +138,7 @@ const HeroSection = () => {
               <motion.span
                 className="relative z-10 inline-block"
                 animate={{
-                  color: isSequencesHovered ? "#B54B00" : defaultTextColor,
+                  color: isSequencesHovered ? "#00C561" : defaultTextColor,
                   y: isSequencesHovered ? -2 : 0,
                 }}
                 transition={{ type: "spring", stiffness: 520, damping: 26 }}
@@ -145,7 +146,7 @@ const HeroSection = () => {
                 Sequences
               </motion.span>
               <motion.span
-                className="absolute inset-x-0 -bottom-1 h-[0.22em] rounded-sm bg-[#FFE2CC]"
+                className="absolute inset-x-0 -bottom-1 h-[0.22em] rounded-sm bg-[#C4F5DC]"
                 initial={false}
                 animate={{
                   opacity: isSequencesHovered ? 1 : 0,
@@ -190,14 +191,14 @@ const HeroSection = () => {
                   className="relative z-10 block w-fit"
                 >
                   <Button
-                    className="min-w-48 justify-center transition-all duration-200 hover:shadow-[0_10px_22px_rgba(181,75,0,0.2)]"
+                    className="min-w-48 justify-center transition-all duration-200 hover:shadow-[0_10px_22px_rgba(0,197,97,0.2)]"
                     variant="landing"
                     size="landing"
                   >
                     {siteConfig.githubStarCtaLabel}
                   </Button>
                 </Link>
-                <span className="pointer-events-none absolute -inset-1 rounded-[999px] border border-[#B54B00]/35 opacity-0 group-hover/repo:opacity-100 transition-opacity duration-200" />
+                <span className="pointer-events-none absolute -inset-1 rounded-[999px] border border-[#00C561]/35 opacity-0 group-hover/repo:opacity-100 transition-opacity duration-200" />
               </div>
             </div>
           </section>
@@ -207,6 +208,7 @@ const HeroSection = () => {
         </div>
         <div className="mt-12 relative z-40">
           <StudioUiPreview />
+          <div className="pointer-events-none absolute inset-0 z-50 rounded-3xl crt-scanlines-soft" />
         </div>
       </section>
     </>

@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className="col-start-1 flex min-w-0 justify-self-start">
           <Link
             href="/"
-            className="flex min-w-0 max-w-full items-center gap-2 rounded-full py-1 pr-1 transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B54B00] sm:gap-2.5 sm:pr-2"
+            className="flex min-w-0 max-w-full items-center gap-2 rounded-full py-1 pr-1 transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C561] sm:gap-2.5 sm:pr-2"
           >
             <Image
               src={siteConfig.logoPath}
@@ -78,7 +78,7 @@ const Navbar = () => {
                 BRAND_LOGO_RADIUS_CLASS,
               )}
             />
-            <span className="[font-family:var(--font-ascii-brand)] truncate text-[14px] font-medium tracking-wide text-[#111] dark:text-zinc-100 sm:text-[15px] lg:text-lg">
+            <span className="[font-family:var(--font-ascii-brand)] truncate text-[14px] font-medium tracking-wide text-[#0e1410] dark:text-zinc-100 sm:text-[15px] lg:text-lg">
               {siteConfig.productName}
             </span>
           </Link>
@@ -122,14 +122,14 @@ const Navbar = () => {
                   className="relative block min-w-0 max-w-full"
                 >
                   <Button
-                    className="max-w-full justify-center px-3 py-2.5 text-[13px] transition-all duration-200 hover:shadow-[0_10px_22px_rgba(181,75,0,0.2)] xl:px-5.5 xl:py-3.5 xl:text-sm"
+                    className="max-w-full justify-center px-3 py-2.5 text-[13px] transition-all duration-200 hover:shadow-[0_10px_22px_rgba(0,197,97,0.2)] xl:px-5.5 xl:py-3.5 xl:text-sm"
                     variant="landing"
                     size="landing"
                   >
                     {siteConfig.githubStarCtaLabel}
                   </Button>
                 </Link>
-                <span className="pointer-events-none absolute -inset-1 rounded-[999px] border border-[#B54B00]/35 opacity-0 transition-opacity duration-200 group-hover/repo:opacity-100" />
+                <span className="pointer-events-none absolute -inset-1 rounded-[999px] border border-[#00C561]/35 opacity-0 transition-opacity duration-200 group-hover/repo:opacity-100" />
               </div>
             </div>
             <Link href={siteConfig.studioPath} className="min-w-0 shrink-0">
@@ -177,7 +177,7 @@ const Navbar = () => {
               : "border-black/8 bg-white/96 backdrop-blur-xl",
           )}
         >
-          <p className="px-4 pt-4 font-mono text-[10px] uppercase tracking-[0.24em] text-[#B54B00]">
+          <p className="px-4 pt-4 font-mono text-[10px] uppercase tracking-[0.24em] text-[#00C561]">
             Navigate
           </p>
           <div className="flex flex-col gap-0.5 p-2 pt-2">
@@ -189,7 +189,7 @@ const Navbar = () => {
                   "rounded-xl px-3 py-3 text-[15px] font-medium transition-colors",
                   isDark
                     ? "text-[#E8E8F0] hover:bg-white/7"
-                    : "text-[#111] hover:bg-black/5",
+                    : "text-[#0e1410] hover:bg-black/5",
                 )}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -213,14 +213,14 @@ const Navbar = () => {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <Button
-                    className="w-full transition-all duration-200 hover:shadow-[0_10px_22px_rgba(181,75,0,0.2)]"
+                    className="w-full transition-all duration-200 hover:shadow-[0_10px_22px_rgba(0,197,97,0.2)]"
                     variant="landing"
                     size="landing"
                   >
                     {siteConfig.githubStarCtaLabel}
                   </Button>
                 </Link>
-                <span className="pointer-events-none absolute -inset-1 rounded-[999px] border border-[#B54B00]/35 opacity-0 group-hover/repo:opacity-100 transition-opacity duration-200" />
+                <span className="pointer-events-none absolute -inset-1 rounded-[999px] border border-[#00C561]/35 opacity-0 group-hover/repo:opacity-100 transition-opacity duration-200" />
               </div>
             </div>
             <Link

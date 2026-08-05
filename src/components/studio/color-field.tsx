@@ -23,8 +23,8 @@ export function ColorField({ label, value, onChange, asRow }: ColorFieldProps) {
       type="button"
       className={
         asRow
-          ? "flex items-center gap-2.5 w-full rounded-lg border border-[#E5E5E5] dark:border-zinc-700 bg-white dark:bg-zinc-800 px-2.5 py-2 transition-colors hover:border-[#B54B00]/50"
-          : "flex w-full items-center gap-2 rounded-md border border-[#E5E5E5] dark:border-zinc-700 bg-white dark:bg-zinc-800 px-2 py-1.5 transition-colors hover:border-[#B54B00]/40"
+          ? "flex items-center gap-2.5 w-full rounded-lg border border-[#E5E5E5] dark:border-zinc-700 bg-white dark:bg-zinc-800 px-2.5 py-2 transition-colors hover:border-[#00C561]/50"
+          : "flex w-full items-center gap-2 rounded-md border border-[#E5E5E5] dark:border-zinc-700 bg-white dark:bg-zinc-800 px-2 py-1.5 transition-colors hover:border-[#00C561]/40"
       }
       aria-label={`Pick ${label}`}
     >
@@ -34,7 +34,7 @@ export function ColorField({ label, value, onChange, asRow }: ColorFieldProps) {
             className="size-5 shrink-0 rounded-md border border-black/10"
             style={{ background: value }}
           />
-          <span className="flex-1 text-left font-sans text-xs text-[#111] dark:text-zinc-100">
+          <span className="flex-1 text-left font-sans text-xs text-[#0e1410] dark:text-zinc-100">
             {label}
           </span>
           <span className="font-mono text-[9px] uppercase tabular-nums text-[#888] dark:text-zinc-500 tracking-wide">
@@ -47,7 +47,7 @@ export function ColorField({ label, value, onChange, asRow }: ColorFieldProps) {
             className="size-4 shrink-0 rounded border border-[#E5E5E5] dark:border-zinc-600"
             style={{ background: value }}
           />
-          <span className="font-mono text-[9px] uppercase tabular-nums tracking-wide text-[#111] dark:text-zinc-100 truncate">
+          <span className="font-mono text-[9px] uppercase tabular-nums tracking-wide text-[#0e1410] dark:text-zinc-100 truncate">
             {value}
           </span>
         </>

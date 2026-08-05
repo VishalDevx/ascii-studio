@@ -113,7 +113,7 @@ const Plans = () => {
       <div
         className="flex  p-1.5 justify-center items-center relative"
         style={{
-          background: "#B54B00",
+          background: "#00C561",
           boxShadow:
             "0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08), inset 2px 3px 3.5px rgba(255, 255, 255, 0.18)",
           borderRadius: "99px",

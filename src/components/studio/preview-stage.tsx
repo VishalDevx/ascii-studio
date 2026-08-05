@@ -74,7 +74,7 @@ export function PreviewStage() {
               aria-label={VIDEO_PLAYBACK_HINT}
               className={cn(
                 STUDIO_OUTLINE_TERTIARY,
-                "h-8 min-w-0 gap-2 rounded-full px-4 font-mono text-[10px] uppercase tracking-widest text-[#111] dark:text-zinc-300 opacity-60",
+                "h-8 min-w-0 gap-2 rounded-full px-4 font-mono text-[10px] uppercase tracking-widest text-[#0e1410] dark:text-zinc-300 opacity-60",
               )}
             >
               <Play className="size-3.5 shrink-0 opacity-80" />
@@ -129,7 +129,7 @@ export function PreviewStage() {
             step={1}
             onValueChange={([v]) => v !== undefined && setFrame(v)}
           />
-          <span className="w-24 shrink-0 text-right font-mono text-xs tabular-nums text-[#111] dark:text-zinc-100">
+          <span className="w-24 shrink-0 text-right font-mono text-xs tabular-nums text-[#0e1410] dark:text-zinc-100">
             {String(currentFrame + 1).padStart(3, "0")} /{" "}
             {String(totalFrames || 1).padStart(3, "0")}
           </span>
@@ -142,13 +142,13 @@ export function PreviewStage() {
 function EmptyState() {
   return (
     <div className="flex select-none flex-col items-center gap-6 text-center">
-      <div className="flex size-20 items-center justify-center rounded-3xl border border-dashed border-[#B54B00]/35 bg-[#F9FAFC] dark:bg-zinc-900">
-        <span className="font-mono text-3xl font-black text-[#B54B00]/40">
+      <div className="flex size-20 items-center justify-center rounded-3xl border border-dashed border-[#00C561]/35 bg-[#F9FAFC] dark:bg-zinc-900">
+        <span className="font-mono text-3xl font-black text-[#00C561]/40">
           A_
         </span>
       </div>
       <div className="space-y-2">
-        <p className="font-sans text-base font-bold tracking-tight text-[#111] dark:text-zinc-100">
+        <p className="font-sans text-base font-bold tracking-tight text-[#0e1410] dark:text-zinc-100">
           No source loaded
         </p>
         <p className="font-mono text-[10px] uppercase tracking-widest text-[#666] dark:text-zinc-500">

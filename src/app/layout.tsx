@@ -33,9 +33,9 @@ const asciiBrand = Silkscreen({
 });
 
 export const metadata: Metadata = {
-  title: "Glyphcast | ASCII Studio",
+  title: "ascii-studio | ASCII Studio",
   description:
-    "Drop in an image or video and tune it into ASCII art, in your browser, in real time.",
+    "Make ASCII move. Drop in a video or image and turn it into animated ASCII art, right in your browser.",
   metadataBase: new URL(SITE_CONFIG.url),
   icons: {
     icon: [
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
     shortcut: ["/favicon/favicon.ico"],
   },
   openGraph: {
-    title: "Glyphcast | ASCII Studio",
+    title: "ascii-studio | ASCII Studio",
     description:
-      "Drop in an image or video and tune it into ASCII art, in your browser, in real time.",
+      "Make ASCII move. Drop in a video or image and turn it into animated ASCII art, right in your browser.",
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.name,
     type: "website",
@@ -58,15 +58,15 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Glyphcast ASCII Studio preview",
+        alt: "ascii-studio ASCII Studio preview",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Glyphcast | ASCII Studio",
+    title: "ascii-studio | ASCII Studio",
     description:
-      "Drop in an image or video and tune it into ASCII art, in your browser, in real time.",
+      "Make ASCII move. Drop in a video or image and turn it into animated ASCII art, right in your browser.",
     images: ["/og-image.jpg"],
   },
 };
@@ -89,7 +89,7 @@ export default function RootLayout({
             __html: `
 (function(){
   try {
-    var k='glyphcast-theme';
+    var k='ascii-studio-theme';
     var def='light';
     var s=localStorage.getItem(k);
     var t=(s==='light'||s==='dark')?s:def;

@@ -21,7 +21,7 @@ export function TopBar({ sidebarOpen, onToggleSidebar }: TopBarProps) {
         <button
           type="button"
           onClick={onToggleSidebar}
-          className="flex size-9 items-center justify-center rounded-full border border-[#E5E5E5] dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 transition-colors hover:bg-[#F9FAFC] dark:hover:bg-zinc-700 hover:text-[#111] dark:hover:text-zinc-100 md:hidden"
+          className="flex size-9 items-center justify-center rounded-full border border-[#E5E5E5] dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 transition-colors hover:bg-[#F9FAFC] dark:hover:bg-zinc-700 hover:text-[#0e1410] dark:hover:text-zinc-100 md:hidden"
           aria-label={sidebarOpen ? "Close sidebar" : "Open sidebar"}
         >
           <Menu className={cn("size-4", sidebarOpen && "hidden")} />
@@ -30,7 +30,7 @@ export function TopBar({ sidebarOpen, onToggleSidebar }: TopBarProps) {
 
         <Link
           href="/"
-          aria-label="Glyphcast home"
+          aria-label="ascii-studio home"
           className="group flex shrink-0 items-center gap-2 transition-all duration-300 hover:opacity-80 md:gap-3"
         >
           <Image
@@ -47,10 +47,10 @@ export function TopBar({ sidebarOpen, onToggleSidebar }: TopBarProps) {
             )}
           />
           <div className="flex min-w-0 items-baseline gap-1.5 sm:gap-2">
-            <span className="[font-family:var(--font-ascii-brand)] text-base font-medium tracking-wide whitespace-nowrap text-[#111] dark:text-zinc-100 md:text-lg">
+            <span className="[font-family:var(--font-ascii-brand)] text-base font-medium tracking-wide whitespace-nowrap text-[#0e1410] dark:text-zinc-100 md:text-lg">
               {siteConfig.productName}
             </span>
-            <span className="hidden rounded-full border border-[#E5C4A5] dark:border-zinc-700 bg-[#FFF8F3] dark:bg-zinc-800 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest text-[#B54B00] sm:inline">
+            <span className="hidden rounded-full border border-[#BFE9D2] dark:border-zinc-700 bg-[#EDFFF7] dark:bg-zinc-800 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest text-[#00C561] sm:inline">
               Studio
             </span>
           </div>

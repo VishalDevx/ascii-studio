@@ -32,7 +32,7 @@ function StudioShell() {
   return (
     <div
       suppressHydrationWarning
-      className="flex h-dvh flex-col overflow-hidden bg-[#F9FAFC] dark:bg-zinc-950 font-satoshi text-[#111] dark:text-zinc-100"
+      className="flex h-dvh flex-col overflow-hidden bg-[#F9FAFC] dark:bg-zinc-950 font-satoshi text-[#0e1410] dark:text-zinc-100"
     >
       <TopBar
         sidebarOpen={sidebarOpen}

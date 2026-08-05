@@ -21,9 +21,9 @@ const buttonVariants = cva(
           "border-destructive/40 bg-transparent text-destructive hover:bg-destructive/10",
         link: "text-foreground underline underline-offset-4 decoration-foreground/40 hover:decoration-foreground",
         landing:
-          "bg-[#FFFFFF] shadow-[0px_4px_1px_rgba(0,0,0,0.01),0px_2px_1px_rgba(0,0,0,0.05),0px_1px_1px_rgba(0,0,0,0.09),0px_0px_1px_rgba(0,0,0,0.1),inset_0px_2px_2.2px_#FFFFFF] rounded-[99px] text-[#0f172a] hover:bg-[#FFFFFF]/90",
+          "bg-[#FFFFFF] shadow-[0px_4px_1px_rgba(0,0,0,0.01),0px_2px_1px_rgba(0,0,0,0.05),0px_1px_1px_rgba(0,0,0,0.09),0px_0px_1px_rgba(0,0,0,0.1),inset_0px_2px_2.2px_#FFFFFF] rounded-[99px] text-[#0b1f16] hover:bg-[#FFFFFF]/90",
         landingBlue:
-          "bg-[#B54B00] shadow-[0px_0px_4px_rgba(0,0,0,0.04),0px_8px_16px_rgba(0,0,0,0.08),inset_2px_3px_3.5px_rgba(255,255,255,0.18)] rounded-[77px] text-white hover:bg-[#9E4200]",
+          "bg-[#00C561] shadow-[0px_0px_4px_rgba(0,0,0,0.04),0px_8px_16px_rgba(0,0,0,0.08),inset_2px_3px_3.5px_rgba(255,255,255,0.18)] rounded-[77px] text-white hover:bg-[#00A951]",
       },
       size: {
         default:

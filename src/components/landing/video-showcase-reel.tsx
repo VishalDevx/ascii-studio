@@ -104,7 +104,7 @@ export default function VideoShowcaseReel() {
       <AnimatePresence mode="wait">
         <motion.div
           key={`ascii-${activeIndex}`}
-          className="absolute rounded-xl overflow-hidden shadow-2xl ring-1 ring-[#B54B00]/20"
+          className="absolute rounded-xl overflow-hidden shadow-2xl ring-1 ring-[#00C561]/20"
           style={{
             width: "58%",
             height: "74%",
@@ -131,7 +131,7 @@ export default function VideoShowcaseReel() {
           />
           {/* ASCII label */}
           <div className="absolute top-2 right-2">
-            <span className="inline-flex items-center gap-1 rounded-md bg-[#B54B00] px-2 py-0.5 text-[9px] font-bold text-white uppercase tracking-wider">
+            <span className="inline-flex items-center gap-1 rounded-md bg-[#00C561] px-2 py-0.5 text-[9px] font-bold text-white uppercase tracking-wider">
               <span className="w-1 h-1 rounded-full bg-white animate-pulse" />
               ASCII
             </span>
@@ -152,14 +152,14 @@ export default function VideoShowcaseReel() {
             style={{
               background:
                 i === activeIndex
-                  ? "rgba(181, 75, 0, 0.25)"
-                  : "rgba(181, 75, 0, 0.1)",
+                  ? "rgba(0, 197, 97, 0.25)"
+                  : "rgba(0, 197, 97, 0.1)",
             }}
             aria-label={`Show ${v.label}`}
           >
             {i === activeIndex && (
               <motion.div
-                className="absolute inset-y-0 left-0 rounded-full bg-[#B54B00]"
+                className="absolute inset-y-0 left-0 rounded-full bg-[#00C561]"
                 initial={{ width: "0%" }}
                 animate={{ width: "100%" }}
                 transition={{

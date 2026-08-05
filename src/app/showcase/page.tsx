@@ -142,7 +142,7 @@ export default function ShowcasePage() {
             }
           : {
               background: "#F9FAFC",
-              color: "#111111",
+              color: "#0e1410",
               ["--background" as string]: "#F9FAFC",
               ["--foreground" as string]: "oklch(0.13 0 0)",
               ["--card" as string]: "#ffffff",
@@ -162,10 +162,10 @@ export default function ShowcasePage() {
       <div className="flex min-h-dvh w-full flex-col items-center font-satoshi">
         <Navbar />
         <main className="landing-content-width w-full flex-1 px-2 pb-10 pt-20 sm:pb-20 sm:pt-32">
-          <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[#B54B00]">
+          <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[#00C561]">
             Gallery
           </p>
-          <h1 className="mt-3 text-3xl font-medium tracking-tight text-[#111] dark:text-[#E8E8F0] sm:text-4xl">
+          <h1 className="mt-3 text-3xl font-medium tracking-tight text-[#0e1410] dark:text-[#E8E8F0] sm:text-4xl">
             Showcase
           </h1>
 

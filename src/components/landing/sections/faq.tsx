@@ -12,9 +12,9 @@ const faqItems: FAQItem[] = [
   {
     id: "item-1",
     number: "01",
-    question: "What export formats does Glyphcast support?",
+    question: "What export formats does ascii-studio support?",
     answer:
-      "Glyphcast exports ASCII art as a PNG snapshot, a ZIP of individual frame text files, or a self-contained React (.tsx) component with all frames embedded, ready to drop into any project.",
+      "ascii-studio exports ASCII art as a PNG snapshot, a ZIP of individual frame text files, or a self-contained React (.tsx) component with all frames embedded, ready to drop into any project.",
   },
   {
     id: "item-2",
@@ -33,7 +33,7 @@ const faqItems: FAQItem[] = [
   {
     id: "item-4",
     number: "04",
-    question: "Is Glyphcast free to use?",
+    question: "Is ascii-studio free to use?",
     answer:
       "Yes, the core studio is free and open-source. Star the repo on GitHub to stay updated. A paid tier with priority support and early access to new features is planned for the future.",
   },

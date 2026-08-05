@@ -23,6 +23,7 @@ export function LandingShell() {
           <Footer />
         </div>
         <ThemeDockButton />
+        <div className="pointer-events-none fixed inset-0 z-[60] crt-scanlines opacity-[0.18] mix-blend-multiply dark:opacity-[0.12]" />
       </div>
     </div>
   );

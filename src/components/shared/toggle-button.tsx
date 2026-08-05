@@ -15,7 +15,7 @@ const ToggleButton = ({
       onClick={() => setToggle(!toggle)}
       className="rounded-full w-12 h-6 flex items-center px-[3px] cursor-pointer shrink-0"
       style={{
-        background: toggle ? "#B54B00" : "#C8C8CC",
+        background: toggle ? "#00C561" : "#C8C8CC",
         boxShadow:
           "inset 0 0 0 1px rgba(255,255,255,0.24), 0px 1px 2px rgba(94,94,108,0.28)",
       }}

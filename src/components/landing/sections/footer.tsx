@@ -36,7 +36,7 @@ const Footer = () => {
               height={32}
               loading="lazy"
             />
-            <span className="[font-family:var(--font-ascii-brand)] text-base sm:text-lg font-medium text-[#111] dark:text-[#F5F5F7] tracking-wide">
+            <span className="[font-family:var(--font-ascii-brand)] text-base sm:text-lg font-medium text-[#0e1410] dark:text-[#F5F5F7] tracking-wide">
               {siteConfig.productName}
             </span>
           </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
             href={siteConfig.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-[#999] hover:text-[#111] dark:text-[#B8B8C2] dark:hover:text-zinc-100 transition-colors"
+            className="text-sm text-[#999] hover:text-[#0e1410] dark:text-[#B8B8C2] dark:hover:text-zinc-100 transition-colors"
           >
             GitHub
           </Link>
@@ -55,10 +55,10 @@ const Footer = () => {
           {/* CTA section */}
           <div className="relative z-10 flex flex-col gap-8 px-5 pt-8 pb-8 sm:flex-row sm:items-end sm:justify-between sm:px-8 sm:pt-10 sm:pb-10">
             <div className="flex max-w-lg flex-col gap-4">
-              <div className="text-[11px] font-mono text-[#B54B00] tracking-[0.25em] uppercase">
+              <div className="text-[11px] font-mono text-[#00C561] tracking-[0.25em] uppercase">
                 Ready to start?
               </div>
-              <div className="text-3xl font-medium leading-tight text-[#111] dark:text-[#F5F5F7] sm:text-4xl md:text-5xl">
+              <div className="text-3xl font-medium leading-tight text-[#0e1410] dark:text-[#F5F5F7] sm:text-4xl md:text-5xl">
                 Start creating
                 <br />
                 ASCII art.
@@ -92,14 +92,14 @@ const Footer = () => {
                     className="relative z-10 block w-fit"
                   >
                     <Button
-                      className="min-w-48 justify-center transition-all duration-200 hover:shadow-[0_10px_22px_rgba(181,75,0,0.2)]"
+                      className="min-w-48 justify-center transition-all duration-200 hover:shadow-[0_10px_22px_rgba(0,197,97,0.2)]"
                       variant="landing"
                       size="landing"
                     >
                       {siteConfig.githubStarCtaLabel}
                     </Button>
                   </Link>
-                  <span className="pointer-events-none absolute -inset-1 rounded-[999px] border border-[#B54B00]/35 opacity-0 transition-opacity duration-200 group-hover/repo:opacity-100" />
+                  <span className="pointer-events-none absolute -inset-1 rounded-[999px] border border-[#00C561]/35 opacity-0 transition-opacity duration-200 group-hover/repo:opacity-100" />
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@ const Footer = () => {
             aria-hidden="true"
           >
             <p
-              className="[font-family:var(--font-ascii-brand)] m-0 select-none text-center font-medium leading-tight text-[#111] dark:text-[#F5F5F7]"
+              className="[font-family:var(--font-ascii-brand)] m-0 select-none text-center font-medium leading-tight text-[#0e1410] dark:text-[#F5F5F7]"
               style={{ fontSize: "clamp(2.25rem, 11vw, 6rem)" }}
             >
               {siteConfig.productName}
@@ -147,7 +147,7 @@ const Footer = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <rect width="14" height="14" rx="3.5" fill="#B54B00" />
+                <rect width="14" height="14" rx="3.5" fill="#00C561" />
                 <path
                   d="M4 10L7 4L10 10"
                   stroke="#FFF8F2"
@@ -162,7 +162,7 @@ const Footer = () => {
                   strokeLinecap="round"
                 />
               </svg>
-              <span className="font-mono text-[11px] font-semibold tracking-wide text-[#888] dark:text-[#B8B8C2] transition-colors group-hover:text-[#B54B00]">
+              <span className="font-mono text-[11px] font-semibold tracking-wide text-[#888] dark:text-[#B8B8C2] transition-colors group-hover:text-[#00C561]">
                 AudoraLabs
               </span>
             </Link>

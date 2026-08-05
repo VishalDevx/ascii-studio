@@ -16,12 +16,12 @@ export function DesktopOnlyGate({ children }: { children: React.ReactNode }) {
           className="flex size-16 items-center justify-center rounded-2xl"
           style={{
             background:
-              "radial-gradient(152.32% 683.53% at 108.86% 152.32%, #FFD9B8 0%, #FFF5ED 100%)",
+              "radial-gradient(152.32% 683.53% at 108.86% 152.32%, #B7F2D2 0%, #E9FFF4 100%)",
             boxShadow:
-              "0px 4px 24px rgba(181, 75, 0, 0.25), inset 0px 2px 2.2px #FFFFFF",
+              "0px 4px 24px rgba(0, 197, 97, 0.25), inset 0px 2px 2.2px #FFFFFF",
           }}
         >
-          <Monitor className="size-8 text-[#B54B00]" />
+          <Monitor className="size-8 text-[#00C561]" />
         </div>
 
         <div className="flex flex-col gap-3">

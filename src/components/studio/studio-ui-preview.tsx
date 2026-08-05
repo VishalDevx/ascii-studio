@@ -57,7 +57,7 @@ const PREVIEW_PANEL =
   "flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden rounded-3xl border border-[#E5E5E5] dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-xl shadow-black/6 dark:shadow-black/40 max-lg:h-[min(62dvh,420px)] lg:h-[680px]";
 
 const POINTER_HINT_CLASS = cn(
-  "inline-flex w-fit max-w-full shrink-0 items-center gap-2 whitespace-nowrap overflow-hidden rounded-full border border-white/25 bg-gradient-to-r from-[#8F3D0C] via-[#B54B00] to-[#C75F18] px-3 py-1.5 font-sans text-[11px] font-normal normal-case tracking-normal text-white ring-1 ring-inset ring-white/10 dark:from-[#7A350A] dark:via-[#A34400] dark:to-[#B8520F]",
+  "inline-flex w-fit max-w-full shrink-0 items-center gap-2 whitespace-nowrap overflow-hidden rounded-full border border-white/25 bg-gradient-to-r from-[#0E8A4C] via-[#00C561] to-[#24D873] px-3 py-1.5 font-sans text-[11px] font-normal normal-case tracking-normal text-white ring-1 ring-inset ring-white/10 dark:from-[#0C7A42] dark:via-[#12914F] dark:to-[#13CF6B]",
 );
 
 function FieldLabel({ children }: { children: ReactNode }) {
@@ -99,7 +99,7 @@ function MockResetChip() {
       type="button"
       variant="landing"
       size="sm"
-      className="h-7 min-h-0 rounded-full px-3 py-0 font-mono text-[9px] font-semibold uppercase tracking-widest text-[#B54B00]"
+      className="h-7 min-h-0 rounded-full px-3 py-0 font-mono text-[9px] font-semibold uppercase tracking-widest text-[#00C561]"
     >
       Reset
     </Button>
@@ -119,8 +119,8 @@ function MockAccordion({
     <section className="border-b border-[#E5E5E5]/70 dark:border-zinc-800/70 last:border-0">
       <header className="flex cursor-default items-center justify-between gap-2 px-4 py-3 select-none">
         <div className="flex items-center gap-2">
-          <ChevronDown className="size-3.5 rotate-0 text-[#B54B00]/40 transition-transform duration-200" />
-          <h3 className="font-sans text-xs font-semibold tracking-wide text-[#111] dark:text-zinc-100">
+          <ChevronDown className="size-3.5 rotate-0 text-[#00C561]/40 transition-transform duration-200" />
+          <h3 className="font-sans text-xs font-semibold tracking-wide text-[#0e1410] dark:text-zinc-100">
             {title}
           </h3>
         </div>
@@ -153,10 +153,10 @@ function MockTopBar() {
             )}
           />
           <div className="flex min-w-0 items-baseline gap-1.5 sm:gap-2">
-            <span className="[font-family:var(--font-ascii-brand)] text-base font-medium tracking-wide whitespace-nowrap text-[#111] dark:text-zinc-100 md:text-lg">
+            <span className="[font-family:var(--font-ascii-brand)] text-base font-medium tracking-wide whitespace-nowrap text-[#0e1410] dark:text-zinc-100 md:text-lg">
               {siteConfig.productName}
             </span>
-            <span className="hidden rounded-full border border-[#E5C4A5] dark:border-zinc-700 bg-[#FFF8F3] dark:bg-zinc-800 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest text-[#B54B00] sm:inline">
+            <span className="hidden rounded-full border border-[#BFE9D2] dark:border-zinc-700 bg-[#EDFFF7] dark:bg-zinc-800 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest text-[#00C561] sm:inline">
               Studio
             </span>
           </div>
@@ -190,7 +190,7 @@ function MockSliderField({
     <div className="space-y-1.5">
       <div className="flex items-center justify-between">
         <FieldLabel>{label}</FieldLabel>
-        <span className="font-mono text-[10px] tabular-nums text-[#111] dark:text-zinc-300">
+        <span className="font-mono text-[10px] tabular-nums text-[#0e1410] dark:text-zinc-300">
           {display ?? value}
         </span>
       </div>
@@ -250,7 +250,7 @@ export default function StudioUiPreview() {
     <div
       tabIndex={0}
       className={cn(
-        "mt-10 landing-content-width max-w-[1100px] cursor-default overflow-hidden rounded-3xl border font-satoshi shadow-[0px_4px_24px_rgba(0,0,0,0.06)] outline-none focus-visible:ring-2 focus-visible:ring-[#B54B00]/35 focus-visible:ring-offset-2 focus-visible:ring-offset-[#F9FAFC] dark:focus-visible:ring-offset-zinc-950",
+        "mt-10 landing-content-width max-w-[1100px] cursor-default overflow-hidden rounded-3xl border font-satoshi shadow-[0px_4px_24px_rgba(0,0,0,0.06)] outline-none focus-visible:ring-2 focus-visible:ring-[#00C561]/35 focus-visible:ring-offset-2 focus-visible:ring-offset-[#F9FAFC] dark:focus-visible:ring-offset-zinc-950",
         isDark
           ? "border-zinc-800 bg-zinc-950"
           : "border-[#E5E5E5] bg-[#F9FAFC]",
@@ -271,11 +271,11 @@ export default function StudioUiPreview() {
               >
                 <div className="flex flex-col items-center gap-3 transition-opacity group-hover/dz:opacity-25 group-focus-within/dz:opacity-25">
                   <Upload
-                    className="h-3.5 w-3.5 shrink-0 text-[#B54B00]/80"
+                    className="h-3.5 w-3.5 shrink-0 text-[#00C561]/80"
                     aria-hidden
                   />
                   <div className="space-y-1">
-                    <p className="font-sans text-xs font-semibold text-[#111] dark:text-zinc-100">
+                    <p className="font-sans text-xs font-semibold text-[#0e1410] dark:text-zinc-100">
                       Drop or browse
                     </p>
                     <p className="font-sans text-[10px] text-[#666] dark:text-zinc-500">
@@ -318,11 +318,11 @@ export default function StudioUiPreview() {
                 "shadow-[0px_1px_2px_rgba(0,0,0,0.04)]",
               )}
             >
-              <div className="flex size-7 shrink-0 items-center justify-center rounded-md border border-[#E5E5E5] dark:border-zinc-700 bg-[#F9FAFC] dark:bg-zinc-700 text-[#B54B00]">
+              <div className="flex size-7 shrink-0 items-center justify-center rounded-md border border-[#E5E5E5] dark:border-zinc-700 bg-[#F9FAFC] dark:bg-zinc-700 text-[#00C561]">
                 <Film className="size-3.5" />
               </div>
               <div className="min-w-0 flex-1">
-                <p className="truncate font-sans text-xs font-semibold text-[#111] dark:text-zinc-100">
+                <p className="truncate font-sans text-xs font-semibold text-[#0e1410] dark:text-zinc-100">
                   Sample source
                 </p>
                 <p className="font-mono text-[10px] tabular-nums text-[#666] dark:text-zinc-500">
@@ -377,7 +377,7 @@ export default function StudioUiPreview() {
                     name="landing-studio-canvas-columns"
                     type="text"
                     readOnly
-                    className="h-8 w-full min-w-0 bg-transparent text-center font-mono text-xs tabular-nums text-[#111] dark:text-zinc-100 outline-none"
+                    className="h-8 w-full min-w-0 bg-transparent text-center font-mono text-xs tabular-nums text-[#0e1410] dark:text-zinc-100 outline-none"
                     value={130}
                   />
                   <span className="flex h-8 w-7 shrink-0 items-center justify-center border-l border-[#E5E5E5] dark:border-zinc-700 text-[#888] dark:text-zinc-400">
@@ -511,7 +511,7 @@ export default function StudioUiPreview() {
                     STUDIO_OUTLINE_TERTIARY,
                     "h-7 w-8 min-w-8 rounded-full border-[#D8D8D8] p-0",
                     isBold &&
-                      "border-[#EBC6A5] bg-[#FFF5ED] text-[#7A3300] shadow-[inset_0_1px_1px_rgba(0,0,0,0.05)]",
+                      "border-[#EBC6A5] bg-[#E9FFF4] text-[#7A3300] shadow-[inset_0_1px_1px_rgba(0,0,0,0.05)]",
                   )}
                 >
                   <Bold className="size-3.5" />
@@ -526,7 +526,7 @@ export default function StudioUiPreview() {
                     STUDIO_OUTLINE_TERTIARY,
                     "h-7 w-8 min-w-8 rounded-full border-[#D8D8D8] p-0",
                     isItalic &&
-                      "border-[#EBC6A5] bg-[#FFF5ED] text-[#7A3300] shadow-[inset_0_1px_1px_rgba(0,0,0,0.05)]",
+                      "border-[#EBC6A5] bg-[#E9FFF4] text-[#7A3300] shadow-[inset_0_1px_1px_rgba(0,0,0,0.05)]",
                   )}
                 >
                   <Italic className="size-3.5" />
@@ -571,7 +571,7 @@ export default function StudioUiPreview() {
               />
               <ColorField
                 label="Text"
-                value="#B54B00"
+                value="#00C561"
                 onChange={() => {}}
                 asRow
               />
@@ -641,7 +641,7 @@ export default function StudioUiPreview() {
                   v !== undefined && setMockPreviewFrame(v)
                 }
               />
-              <span className="w-24 shrink-0 text-right font-mono text-xs tabular-nums text-[#111] dark:text-zinc-100">
+              <span className="w-24 shrink-0 text-right font-mono text-xs tabular-nums text-[#0e1410] dark:text-zinc-100">
                 {String(mockPreviewFrame + 1).padStart(3, "0")} /{" "}
                 {String(HERO_MOCK_FRAME_COUNT).padStart(3, "0")}
               </span>

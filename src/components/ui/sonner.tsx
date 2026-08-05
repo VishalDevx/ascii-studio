@@ -49,13 +49,13 @@ const Toaster = ({ ...props }: ToasterProps) => {
       style={
         {
           "--normal-bg": isDark ? "#1C1C1F" : "#ffffff",
-          "--normal-text": isDark ? "#F4F4F5" : "#111111",
+          "--normal-text": isDark ? "#F4F4F5" : "#0e1410",
           "--normal-border": isDark ? "#2E2E35" : "#E5E5E5",
           "--success-bg": isDark ? "#1C1C1F" : "#ffffff",
-          "--success-text": isDark ? "#F4F4F5" : "#111111",
+          "--success-text": isDark ? "#F4F4F5" : "#0e1410",
           "--success-border": isDark ? "#2E2E35" : "#E5E5E5",
           "--error-bg": isDark ? "#1C1C1F" : "#ffffff",
-          "--error-text": isDark ? "#F4F4F5" : "#111111",
+          "--error-text": isDark ? "#F4F4F5" : "#0e1410",
           "--error-border": isDark ? "#2E2E35" : "#E5E5E5",
           "--border-radius": "14px",
           "--toast-width": "340px",
@@ -68,7 +68,7 @@ const Toaster = ({ ...props }: ToasterProps) => {
             "shadow-xl border px-4 py-3.5 gap-3",
             isDark
               ? "bg-[#1C1C1F] border-[#2E2E35] text-zinc-100 shadow-black/50"
-              : "bg-white border-[#E5E5E5] text-[#111111] shadow-black/8",
+              : "bg-white border-[#E5E5E5] text-[#0e1410] shadow-black/8",
           ].join(" "),
           title: "text-sm font-medium leading-snug",
           description: "text-xs leading-relaxed mt-0.5",
@@ -79,7 +79,7 @@ const Toaster = ({ ...props }: ToasterProps) => {
               : "!bg-zinc-100 !border-zinc-200 hover:!bg-zinc-200 !text-zinc-500",
           ].join(" "),
           actionButton:
-            "!bg-[#B54B00] !text-white hover:!bg-[#9E4200] !border-0 !rounded-lg !text-xs !font-medium !px-3 !h-7 !shadow-[inset_0px_1px_2px_rgba(255,255,255,0.15)]",
+            "!bg-[#00C561] !text-white hover:!bg-[#00A951] !border-0 !rounded-lg !text-xs !font-medium !px-3 !h-7 !shadow-[inset_0px_1px_2px_rgba(255,255,255,0.15)]",
           icon: "mt-0.5",
         },
       }}
