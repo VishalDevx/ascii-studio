@@ -181,14 +181,14 @@ bun run format
 
 <a href="https://www.star-history.com/?repos=narsibhati-dev%2Fglyphcast&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=narsibhati-dev/glyphcast&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=narsibhati-dev/glyphcast&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=narsibhati-dev/glyphcast&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=VishalDevx/glyphcast&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=VishalDevx/glyphcast&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=VishalDevx/glyphcast&type=date&legend=top-left" />
  </picture>
 </a>
 
 ## Links
 
-- GitHub: [narsibhati-dev/glyphcast](https://github.com/narsibhati-dev/glyphcast)
+- GitHub: [VishalDevx/glyphcast](https://github.com/VishalDevx/glyphcast)
 - X: [@marsihq](https://x.com/marsihq)
 - LinkedIn: [narsibhati](https://www.linkedin.com/in/narsibhati/)
